@@ -1,12 +1,11 @@
 #pragma once
 
 #include "pch.h"
+#include "Window.h"
 
 struct ApplicationSpecification
 {
-	std::string Name = "MeshLoader";
-	uint32_t Width = 1600;
-	uint32_t Height = 900;
+	std::string Name = "App";
 };
 
 class MeshLoader
@@ -15,8 +14,11 @@ public:
 	MeshLoader(const ApplicationSpecification& applicationSpecification = ApplicationSpecification());
 	~MeshLoader();
 
-private:
+	void Run();
 
+private:
+	ApplicationSpecification m_Spec;
+	Window* window;
 };
 
-MeshLoader* CreateMeshLoader(int argc, char** argv);
+MeshLoader* CreateMeshLoader();
