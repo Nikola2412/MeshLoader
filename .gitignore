@@ -404,3 +404,25 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+
+# Directories
+.vs/
+bin/
+bin-int/
+
+# VS Files
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.sln
+
+# Exclude
+!vendor/bin
+*.ini
+/Editor/Editor.vcxproj
+/Editor/Editor.vcxproj.filters
+
+
+/EditorApp/LogFiles/*
+*.slnx
