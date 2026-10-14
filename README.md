@@ -20,7 +20,7 @@ Before building the project, make sure you have:
 Clone the repository with submodules:
 
 ```bash
-git clone --recurse-submodules https://github.com/Nikola2412/Editor.git
+git clone --recurse-submodules https://github.com/Nikola2412/MeshLoader.git
 cd Editor
 ```
 
